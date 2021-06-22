@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 视口 width=device-width 初始化比例为1 不缩放 禁止用户缩放  -->
+    <!-- viewport-fit=cover" iphoneX 前刘海的适配问题 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 在苹果手机设备上 会把一些电话号码自动识别 可拨打的手机号，会有链接 设为no 取消 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- yes显示 苹果手机的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 设置苹果手机设备的状态栏 为黑色 .默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>王者荣耀</title>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+    <div class="box">
+        <img src="./imgs/more.png" alt="" class=title-pic>
+        <div class="about-box">
+            <div class="introduce">
+                <div>
+                    <img src="https://game.gtimg.cn/images/yxzj/web201605/page/games.png" alt="">
+                    <p>游戏介绍</p>
+                </div>
+                <span>
+                    《王者荣耀》是腾讯第一5V5团队公平竞技手游，国民MOBA手游大作！5V5王者峡谷、公平对战、还原MOBA经典体验；契约之战、五军对决、边境突围等，带来花式作战乐趣！10秒实时跨区匹配，与好友开黑上分，向最强王者进击！多款英雄任凭选择，一血、五杀、超神，实力碾压，收割全场！敌军即将到达战场，王者召唤师快来集结好友，准备团战，就在《王者荣耀》！
+                </span>
+            </div>
+            <div class='features'>
+                <div class='features-title'>
+                    <img src="https://game.gtimg.cn/images/yxzj/web201605/page/icon_gs.png" alt="">
+                    <p>游戏特色</p>
+                </div>
+                <div class='item'>
+                    <p class='item-title'>游戏特色一</p>
+                    <p class='item-title2'>视觉全面升级！王者2.0时代来临</p>
+                    <span>全景沉浸式大厅，国风配色、传统饰形、山水云纹，更加具有东方神韵；次世代技术，全面提升画质，呈现超高清峡谷地图。</span>
+                    <img src="https://ossweb-img.qq.com/upload/webplat/info/yxzj/20191112/580401482397530.png" alt="">
+                </div>
+                <div class='item'>
+                    <p class='item-title'>游戏特色二</p>
+                    <p class='item-title2'>团队公平竞技！好玩不坑拼实力！</p>
+                    <span>凭实力carry全场，与团队共赴荣耀。不做英雄养成，不设体力，还你最初的游戏乐趣！</span>
+                    <img src="https://ossweb-img.qq.com/upload/webplat/info/yxzj/20191112/117241431496467.jpg" alt="">
+                </div>
+                <div class='item'>
+                    <p class='item-title'>游戏特色三</p>
+                    <p class='item-title2'>王者模拟战！策略对抗乐在棋中！</p>
+                    <span>8人为组，下一盘王者棋！不同职业，众多阵营，考验策略博弈，看谁能战到最后？！</span>
+                    <img src="https://ossweb-img.qq.com/upload/webplat/info/yxzj/20191112/97824135495719.jpg" alt="">
+                </div>
+                <div class='item'>
+                    <p class='item-title'>游戏特色四</p>
+                    <p class='item-title2'>万象天工！共创无限可能！</p>
+                    <span>王者天工编辑器，为开发者和用户提供创造王者玩法的机会，未来有无限可能！</span>
+                    <img src="https://ossweb-img.qq.com/upload/webplat/info/yxzj/20191112/12099172649532.jpg" alt="">
+                </div>
+                <div class='item'>
+                    <p class='item-title'>游戏特色五</p>
+                    <p class='item-title2'>狄仁杰守护！对局环境持续优化！</p>
+                    <span>匹配机制、信誉积分系统、实时审判系统等对局相关系统持续迭代优化，全方位提升召唤师对局体验。</span>
+                    <img src="https://ossweb-img.qq.com/upload/webplat/info/yxzj/20191112/5392625945049.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chose-box">
+        <div class="tab">
+            <ul>
+                <li><a href="./about.html">关于王者荣耀</a> </li>
+                <li><a href="./hero.html">英雄列表</a></li>
+                <li><a href="./video.html">相关视频</a></li>
+            </ul>
+        </div>
+        <div class="cover"></div>
+    </div>
+</body>
+
+<script src="./js/jquery2.0.min.js"></script>
+<script>
+// 先获取 可视区域的宽高 
+var iw = document.documentElement.clientWidth;
+var iH = document.documentElement.clientHeight;
+// 对于小于320px的逻辑像素宽 则 卡住 不缩放啦不适配
+iw = iw < 375 ? 375 : iw;
+//获取 html元素
+// cssrem 插件  比如 以ihone6、7、8为基准开发  375逻辑像素宽/20 => 16px
+document.querySelector('html').style.fontSize = iw / 23.4375 + 'px';
+// 把 body的高度撑开
+document.querySelector('body').style.height = iH + 'px';
+</script>
+
+<script>
+    // 侧边栏显示隐藏
+$('.chose-box').hide()
+$('.title-pic').click(function () {
+    $('.chose-box').fadeIn(300)
+})
+$('.cover').click(function () {
+    $('.chose-box').fadeOut(300)
+})
+
+</script>
+
+</html>

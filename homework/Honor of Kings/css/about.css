@@ -1,0 +1,132 @@
+body{
+    position: relative;
+}
+.box{
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.box>.title-pic{
+    width: 1.25rem;
+    height: auto;
+    padding: 1.25rem;
+}
+.about-box{
+    width: 94%;
+    margin: 0 auto;
+}
+.introduce{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+}
+.introduce>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: .625rem;
+}
+.introduce>div>img{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .625rem;
+}
+.introduce>div>p{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #616161;
+}
+.introduce>span{
+    color: #909090;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    text-indent: 2em;
+}
+.features{
+    width: 100%;
+}
+.features>.features-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: .625rem;
+}
+.features>.features-title>img{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .625rem;
+}
+.features>.features-title>p{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #616161;
+}
+.features>.item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .875rem 0;
+}
+.features>.item>.item-title{
+    font-size: .875rem;
+    font-weight: bold;
+    color: #A6A7A7;
+    margin-bottom: .25rem;
+}
+.features>.item>.item-title2{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-indent: 2em;
+    margin-bottom: .375rem;
+}
+.features>.item>span{
+    color: #909090;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    text-indent: 2em;
+}
+.features>.item>img{
+    width: 100%;
+    height: auto;
+}
+.chose-box{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.chose-box>.tab{
+    width: 30%;
+    height: 100vh;
+}
+.chose-box>.cover{
+    flex: 1;
+    height: 100vh;
+    background: #e9e9e9;
+    opacity: 0.8;
+}
+.chose-box>.tab>ul{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 1.25rem 0;
+    background: rgb(224, 224, 224);
+}
+.chose-box>.tab>ul>li{
+    width: 100%;
+    box-sizing: border-box;
+    padding: .625rem;
+    border-bottom: 1px solid #b6b6b6;
+}
+.chose-box>.tab>ul>li>a{
+    width: 100%;
+    font-size: .75rem;
+}
